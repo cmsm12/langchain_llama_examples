@@ -23,4 +23,5 @@ if __name__ == '__main__':
 
     # set and run for question
     question = "What is difference between desert and sea?"
-    llm_chain.run(question)
+    answer = llm_chain.run(question)
+    print(answer)
