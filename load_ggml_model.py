@@ -17,6 +17,7 @@ if __name__ == '__main__':
     # load model
     llm = LlamaCpp(
         model_path=MODEL_PATH, callback_manager=callback_manager, verbose=True
+    )
 
     # create simple chain
     llm_chain = LLMChain(prompt=prompt, llm=llm)
