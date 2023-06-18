@@ -16,4 +16,4 @@ RUN rm -rf /var/lib/apt/lists/*
 # Copy prediction server code to image
 COPY ./app /app
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
